@@ -1,0 +1,48 @@
+@use '../abstracts/abstracts' as a;
+
+.hero{
+    width:90%;
+    &__title{
+        @include a.title-font;
+        margin-bottom: 30px;
+    }
+    &__description{
+        color:a.$grey;
+        font-size:15px;
+        margin-bottom:35px;
+        width: 70%;
+    }
+
+    &__nav-list{
+        @include a.reset-list;
+        align-items: center;
+        margin-bottom: 110px;
+    }
+    &__button{
+        color:a.$white;
+        font-size: 14px;
+        background-color: a.$pink;
+        padding:10px 40px;
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        text-decoration: none;
+        &:hover{
+            @include a.hover-button();
+        }
+    }
+    &__link{
+        color:a.$white;
+        font-size: 14px;
+        text-decoration: underline;
+        position:relative;
+        &:hover{
+            @include a.hover-link();
+        }
+        img{
+            position:absolute;
+            bottom:-8px;
+            right: -35px;
+            width: 30px;
+        }
+    }
+}

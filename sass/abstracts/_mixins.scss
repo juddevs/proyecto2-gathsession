@@ -1,0 +1,34 @@
+@use 'variables' as v;
+
+@mixin title-font(){
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 50px;
+  color:v.$white;
+}
+
+@mixin reset-list(){
+  display:flex;
+  list-style: none;
+  gap:50px;
+}
+
+@mixin hover-link(){
+  color: v.$color-hover;
+}
+
+@mixin hover-icon(){
+  background-color: v.$color-hover;
+  border-radius: 10px;
+}
+
+@mixin hover-logo(){
+  background-color: v.$color-hover;
+  padding:10px 20px;
+  border-radius: 20px;
+}
+
+@mixin hover-button{
+  background-color:rgb(238, 173, 223);
+  color: v.$color-hover;
+}

@@ -1,0 +1,32 @@
+@use '../abstracts/abstracts' as a;
+
+.actions{
+    &__list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width:60%;
+    gap:30px;
+    }
+    &__item{
+       display: flex;
+       align-items: center;
+       gap:10px;
+   
+    }
+    &__icon{
+        width: 45px;
+        &:hover{
+            @include a.hover-icon();
+        }
+    }
+    &__link{
+        color: a.$white;
+        font-size: 13px;
+        text-decoration: none;
+        &:hover{
+            @include a.hover-link();
+        }
+        
+    }
+}

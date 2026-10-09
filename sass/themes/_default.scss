@@ -1,0 +1,17 @@
+@use '../abstracts/abstracts' as a;
+
+body {
+    overflow-x: hidden;
+    background-color: a.$black;
+    padding: 0;
+} 
+
+.container {
+margin-left:120px;
+margin-right: 50px;
+max-width: 100%;
+
+padding:0;
+font-family: a.$primary-font;
+font-weight: 400;
+}
